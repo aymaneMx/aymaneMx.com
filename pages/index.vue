@@ -11,7 +11,7 @@
       </div>
 
       <div>
-        <Projects/>
+        <Blogs/>
       </div>
     </div>
 
@@ -39,11 +39,6 @@ import TechStack from '../components/TechStack.vue'
 export default {
   components:{
     Hero, Social, Projects, TechStack
-  },
-  head() {
-    return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-    };
   },
 };
 </script>

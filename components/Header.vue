@@ -9,9 +9,9 @@
         </div>
 
         <div class="navbar hidden md:block">
-          <nuxt-link class="nav-link hover:text-primary" to="/">Blog</nuxt-link>
-          <nuxt-link class="nav-link hover:text-primary" to="/">About</nuxt-link>
-          <nuxt-link class="nav-link hover:text-primary" to="/"><i class='bx bxs-sun'></i></nuxt-link>
+          <nuxt-link class="nav-link hover:text-primary" to="/posts">Blog</nuxt-link>
+          <nuxt-link class="nav-link hover:text-primary" to="/about">About</nuxt-link>
+          <nuxt-link class="nav-link hover:text-primary" to="/"><i class='bx bx-sun'></i></nuxt-link>
         </div>
 
         <div class="ml-3 flex md:hidden">
