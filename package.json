@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/content": "^1.14.0",
     "@tailwindcss/typography": "^0.4.0",
     "boxicons": "^2.0.7",
     "core-js": "^3.9.1",
