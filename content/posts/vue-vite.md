@@ -1,9 +1,10 @@
 ---
+draft: false
 date: 2021-04-05T09:37:27+01:00
 title: Set up a Vue app running on Vite
 description: This is a beginner guide on how to set up a vue.js app running on Vite. I’ll also add and configure ESLint & Prettier for linting and code formatting, set up Tailwind CSS for styling, and finally configure VueX and Vue Router.
 slug: set-up-Vue-app-running-on-vite
-tags: ['vuejs', 'vitejs', 'tailwind-css', 'vuex', 'vue-router', 'eslint']
+tags: vuejs, vitejs, tailwind-css, vuex, vue-router, eslint
 cover: /images/posts/vue-vite.png
 ---
 
