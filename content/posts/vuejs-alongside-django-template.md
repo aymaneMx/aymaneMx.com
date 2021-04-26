@@ -1,11 +1,11 @@
 ---
 draft: false
 date: 2021-01-03T09:37:27+01:00
-title: Using Vue.js alongside Django Template
+title: Using Vue.js alongside Django Template
 description: This post aims to show that you can start to use Vue with your Django projects immediately without any sophisticated setup that will take hours to complete.
 slug: using-vuejs-alongside-django-template
 tags: django, vuejs, axios
-cover: /images/posts/vue-django.png
+cover: vue-django.png
 ---
 
 
@@ -19,7 +19,7 @@ This post aims to show that you can start to use Vue with your Django projects i
 
 ## A Demo App
 
-![demo task app](/images/posts/demo-task-app.png)
+![demo task app](~/assets/demo-task-app.png)
 
 For a demo, I made a simple todo app, so I can play around with vue.js alongside the Django template.
 

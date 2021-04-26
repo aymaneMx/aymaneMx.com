@@ -5,7 +5,7 @@ title: Building a Full-Text Search App Using Django, Docker and Elasticsearch
 description: In this article, I will be giving you brief information about Elasticsearch, its installation, and some examples of usage.
 slug: building-a-full-text-search-app-using-django-docker-and-elasticsearch 
 tags: python, django, docker, elasticsearch
-cover: /images/posts/django-docker-elasticsearch.png
+cover: django-docker-elasticsearch.png
 ---
 
 

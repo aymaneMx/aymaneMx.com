@@ -4,44 +4,33 @@
       <Hero/>
     </div>
 
-    <div class="mt-16">
-      <div class="flex justify-center items-center text-base font-semibold text-gray-600">
-        <h4 class="text-center">Featured blogs </h4>
-        <i class='bx bx-chevrons-down ml-1 mt-1'></i>
-      </div>
-
-      <div>
-        <Blogs/>
-      </div>
-    </div>
-
-
-<!--    <div class="mt-16 md:mt-24">-->
-<!--      <div class="flex justify-center items-center text-base font-semibold text-gray-600">-->
-<!--        <h4 class="text-center">Tech stack I use.</h4>-->
-<!--        <i class='bx bx-chevrons-down ml-1 mt-1'></i>-->
-<!--      </div>-->
-
-<!--      <div>-->
-<!--        <TechStack/>-->
-<!--      </div>-->
-<!--    </div>-->
-
+    <Blogs :posts="posts" title="Featured blogs"/>
+    <TechStack/>
   </div>
 </template>
 
 <script>
-import Hero from '../components/Hero.vue'
-import Social from '../components/Social.vue'
-import Projects from '../components/Blogs.vue'
-import TechStack from '../components/TechStack.vue'
+import Blogs from "@/components/Blogs";
+import Hero from "@/components/Hero";
+import TechStack from "@/components/TechStack";
 
 export default {
   components:{
-    Hero, Social, Projects, TechStack
+    TechStack,
+    Hero,
+    Blogs,
   },
-};
+  async asyncData({ $content}) {
+    const featuredTitles = [
+      "Building a Full-Text Search App Using Django, Docker and Elasticsearch",
+      "GraphQl In Django - An Overview",
+      "Using Vue.js alongside Django Template",
+    ]
+    const posts = await $content("posts")
+      .sortBy('date', "desc")
+      .where({ title: { $in: featuredTitles } })
+      .fetch()
+    return { posts }
+  },
+}
 </script>
-
-<style>
-</style>

@@ -5,7 +5,7 @@ title: The Easiest Way To Generate Fancy Avatars In Python
 description: This is a really short article, where I will show you how to generate cool avatars from a given string (email, username...) or from your logo using python.
 slug: fancy-avatars-in-python 
 tags: python
-
+cover: avatars-logo-mine.png
 ---
 
 
@@ -105,9 +105,9 @@ byteImg.save(filename + '.png', 'PNG')
 
 Run, and the result will be a PNG image like this:
 
-![avatars initials a](/images/posts/avatars/avatars-initials-a.png)
+![avatars initials a](~/assets/avatars-initials-a.png)
 
-![coool gif](/images/posts/avatars/cool.gif)
+![coool gif](~/assets/cool.gif)
 
 While playing with the SVG template, I discovered that I can make an icon or a logo instead of a text, which brings us to the next part.
 
@@ -174,7 +174,7 @@ byteImg.save(filename + '.png', 'PNG')
 
 The result will be something like this:
 
-![avatars logo twitter](/images/posts/avatars/avatars-logo-twitter.png)
+![avatars logo twitter](~/assets/avatars-logo-twitter.png)
 
 > Now, you are maybe wondering how can I get a SVG file of my logo?
 
@@ -182,7 +182,7 @@ The answer is you can ask your designer gently for it, or you can do it yourself
 
 But the simple way, (which is why you're here) is by using an online tool as [online-convert](https://image.online-convert.com/convert-to-svg), I use it for my shitty logo, and here is the result.
 
-![avatars logo aymaneMx](/images/posts/avatars/avatars-logo-mine.png)
+![avatars logo aymaneMx](~/assets/avatars-logo-mine.png)
 
 Isn’t so fancy!!
 

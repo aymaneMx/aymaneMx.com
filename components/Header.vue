@@ -30,10 +30,10 @@
       </div>
     </nav>
     <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
-      <div class="px-2 pt-2 pb-3 sm:px-3 bg-primary">
-        <nuxt-link to="blog" class="mt-1 mobile-link focus:outline-none hover:text-gray-500">Blog</nuxt-link>
-        <nuxt-link to="about" class="mt-1 mobile-link focus:outline-none hover:text-gray-500">About</nuxt-link>
-        <nuxt-link to="credits" class="mt-1 mobile-link focus:outline-none hover:text-gray-500">light!</nuxt-link>
+      <div class="px-2 pt-2 pb-3 sm:px-3">
+        <nuxt-link to="posts" class="mt-1 mobile-link focus:outline-none hover:text-primary">Blog</nuxt-link>
+        <nuxt-link to="about" class="mt-1 mobile-link focus:outline-none hover:text-primary">About</nuxt-link>
+        <nuxt-link to="/" class="mt-1 mobile-link focus:outline-none hover:text-primary"><i class='bx bx-sun'></i></nuxt-link>
       </div>
     </div>
   </div>

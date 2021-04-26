@@ -15,7 +15,7 @@ export default {
 <!--      <p class="text-sm text-gray-700 font-semibold mt-5">{{ post.date }} · 5min read</p>-->
 <!--      <p class="text-sm font-semibold mt-2">{{ post.tags }}</p>-->
       <div class="img max-w-full mx-auto m-5">
-        <img src="~/assets/vue-vite.png" class="rounded-xl shadow-lg" alt="">
+        <img :src="require(`~/assets/${post.cover}`)" :alt="post.title" class="rounded-xl shadow-lg">
       </div>
     </div>
     <nuxt-content class="prose prose-lg max-w-screen-lg mx-auto px-3 my-5" :document="post" />

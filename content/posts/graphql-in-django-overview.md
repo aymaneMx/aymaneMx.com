@@ -2,14 +2,15 @@
 draft: false
 date: 2020-04-08T15:04:24+01:00
 title: GraphQl In Django - An Overview
-description: Since being introduced by Facebook, GraphQL has been presented as a revolutionary alternative to REST APIs, GraphQL fixes many problems found with RESTful architecture. However, it also introduces a new set of challenges which need to be evaluated. This blog post will walk through things you should know about using graphQl API with Django ?
 slug: graphql-in-django-overview 
 tags: python, django, graphql, graphene
-cover: /images/posts/graphql-in-django-overview.png
+cover: graphql-in-django-overview.png
 ---
 
 
-Since being introduced by Facebook, GraphQL has been presented as a revolutionary alternative to REST APIs, GraphQL fixes many problems found with RESTful architecture. However, it also introduces a new set of challenges which need to be evaluated. This blog post will walk through things you should know about using graphQl API with Django ?
+Since being introduced by Facebook, GraphQL has been presented as a revolutionary alternative to REST APIs, GraphQL fixes many problems found with RESTful architecture. 
+<!--more-->
+However, it also introduces a new set of challenges which need to be evaluated. This blog post will walk through things you should know about using graphQl API with Django ?
 
 
 ## GraphQL (basic concepts)
