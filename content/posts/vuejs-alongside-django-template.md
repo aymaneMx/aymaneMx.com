@@ -25,7 +25,7 @@ For a demo, I made a simple todo app, so I can play around with vue.js alongside
 
 The app shows the users' tasks, and the user can perform basic crud actions.
 
-It looks really simple, but it’s a great way to practice some of the key concepts of Vue.
+It looks really simple, but it’s a great way to practice some key concepts of Vue.
 
 Try to create it yourself, and of course, If you get stuck, you can always get back to my code.
 

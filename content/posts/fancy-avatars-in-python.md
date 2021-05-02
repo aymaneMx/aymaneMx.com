@@ -105,7 +105,7 @@ byteImg.save(filename + '.png', 'PNG')
 
 Run, and the result will be a PNG image like this:
 
-![avatars initials a](~/assets/avatars-initials-a.png)
+![avatars initials a](/_nuxt/assets/avatars-initials-a.png)
 
 ![coool gif](~/assets/cool.gif)
 

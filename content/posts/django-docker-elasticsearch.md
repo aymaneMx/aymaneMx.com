@@ -34,13 +34,13 @@ I’ve put together 4 of the most important concepts:
 
 Many tutorials are using [Django-Haystack](https://django-haystack.readthedocs.io/), which is very widely used in the Django community, as a modular search to plug ElasticSearch (or any other search engine such as Solr, Whoosh, Xapian, etc.), for its minimal configurations and the query syntax is similar to Django’s ORM.
 
-I have used it with [Solr](https://lucene.apache.org/solr/) recently in a project and I was impressed with how easy it implemented, I loved it, but I will not use it in this article, I think that Elasticsearch itself is simple to use.
+I have used it with [Solr](https://lucene.apache.org/solr/) recently in a project, and I was impressed with how easy it implemented, I loved it, but I will not use it in this article, I think that Elasticsearch itself is simple to use.
 
 I will be using Docker to run Elasticsearch.
 
 Here is the [source code](https://github.com/aymaneMx/django-elasticsearch) I will be using, so you can see exactly what is going on.
 
-![let us begin](/images/posts/let-us-begin.gif)
+![let us begin](~/assets/let-us-begin.gif)
 
 ### Elasticsearch instance
 
