@@ -10,9 +10,6 @@
           </nuxt-link>
         </div>
 
-        <!--        <div class="sm:hidden md:my-0 order-last md:order-none text-center">-->
-        <!--          <p class="text-lg font-semibold text-gray-600">Made with ❤</p>-->
-        <!--        </div>-->
 
         <div>
           <Social/>

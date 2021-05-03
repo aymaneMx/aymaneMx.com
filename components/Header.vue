@@ -8,34 +8,38 @@
           </nuxt-link>
         </div>
 
-        <div class="navbar hidden md:block">
+        <div class="flex flex-row">
           <nuxt-link class="nav-link hover:text-primary" to="/posts">Blog</nuxt-link>
           <nuxt-link class="nav-link hover:text-primary" to="/about">About</nuxt-link>
-          <nuxt-link class="nav-link hover:text-primary" to="/"><i class='bx bx-sun'></i></nuxt-link>
+          <nuxt-link class="nav-link hover:text-primary" to="/">
+            <span class="iconify" data-icon="carbon:sun" data-inline="false"></span>
+          </nuxt-link>
         </div>
 
-        <div class="ml-3 flex md:hidden">
-          <!-- Mobile menu button -->
-          <button @click="toggle" class="flex-center rounded-md">
-            <svg :class="[isOpen ? 'hidden' : 'block', 'h-6 w-6']" stroke="currentColor" fill="none" viewBox="0 0 24 24"
-                 width="24" height="24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-            <svg :class="[isOpen ? 'block' : 'hidden', 'h-6 w-6']" stroke="currentColor" fill="none" viewBox="0 0 24 24"
-                 width="24" height="24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-        </div>
+<!--        <div class="ml-3 flex md:hidden">-->
+<!--          &lt;!&ndash; Mobile menu button &ndash;&gt;-->
+<!--          <button @click="toggle" class="flex-center rounded-md">-->
+<!--            <svg :class="[isOpen ? 'hidden' : 'block', 'h-6 w-6']" stroke="currentColor" fill="none" viewBox="0 0 24 24"-->
+<!--                 width="24" height="24">-->
+<!--              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>-->
+<!--            </svg>-->
+<!--            <svg :class="[isOpen ? 'block' : 'hidden', 'h-6 w-6']" stroke="currentColor" fill="none" viewBox="0 0 24 24"-->
+<!--                 width="24" height="24">-->
+<!--              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>-->
+<!--            </svg>-->
+<!--          </button>-->
+<!--        </div>-->
       </div>
     </nav>
-    <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
-      <div class="px-2 pt-2 pb-3 sm:px-3">
-        <nuxt-link to="posts" class="mt-1 mobile-link focus:outline-none hover:text-primary">Blog</nuxt-link>
-        <nuxt-link to="about" class="mt-1 mobile-link focus:outline-none hover:text-primary">About</nuxt-link>
-        <nuxt-link to="/" class="mt-1 mobile-link focus:outline-none hover:text-primary"><i class='bx bx-sun'></i></nuxt-link>
-      </div>
-    </div>
+<!--    <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">-->
+<!--      <div class="px-2 pt-2 pb-3 sm:px-3">-->
+<!--        <nuxt-link to="posts" class="mt-1 mobile-link focus:outline-none hover:text-primary">Blog</nuxt-link>-->
+<!--        <nuxt-link to="about" class="mt-1 mobile-link focus:outline-none hover:text-primary">About</nuxt-link>-->
+<!--        <nuxt-link to="/" class="mt-1 mobile-link focus:outline-none hover:text-primary">-->
+<!--          <span class="iconify" data-icon="bx:bxs-sun"></span>-->
+<!--        </nuxt-link>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
 </template>
 
@@ -60,6 +64,6 @@ export default {
   @apply block px-3 py-2 text-lg text-gray-900 rounded-md text-white font-medium text-center;
 }
 .nav-link{
-  @apply ml-12 font-medium text-lg text-gray-700;
+  @apply ml-5 font-medium text-center text-lg text-gray-700 m-auto;
 }
 </style>

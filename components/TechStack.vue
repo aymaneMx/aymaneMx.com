@@ -2,17 +2,19 @@
   <div class="mt-16 md:mt-24">
     <div class="flex justify-center items-center text-base font-semibold text-gray-600">
       <h4 class="text-center">Tech stack I use.</h4>
-      <i class='bx bx-chevrons-down ml-1 mt-1'></i>
+      <span class="iconify" data-icon="mdi:chevron-double-down" data-inline="false"></span>
     </div>
-    <div>
-      <div class="wrapper-small text-center my-5">
-        <div class="text-4xl md:text-5xl text-gray-700 text-center">
-          <i class='bx bxl-python mx-2 md:mx-4'></i>
-          <i class='bx bxl-django mx-2 md:mx-4'></i>
-          <i class='bx bxl-javascript mx-2 md:mx-4'></i>
-          <i class='bx bxl-vuejs mx-2 md:mx-4'></i>
-        </div>
-      </div>
+
+
+    <div class="flex flex-wrap justify-center items-center text-4xl mt-5">
+      <span class="iconify m-2 md:m-4" data-icon="mdi:language-python" data-inline="false"></span>
+      <span class="iconify m-2 md:m-4" data-icon="bx:bxl-django" data-inline="false"></span>
+      <span class="iconify m-2 md:m-4" data-icon="mdi:aws" data-inline="false"></span>
+      <span class="iconify m-2 md:m-4" data-icon="grommet-icons:heroku" data-inline="false"></span>
+      <span class="iconify m-2 md:m-4" data-icon="mdi:language-javascript" data-inline="false"></span>
+      <span class="iconify m-2 md:m-4" data-icon="mdi:tailwind" data-inline="false"></span>
+      <span class="iconify m-2 md:m-4" data-icon="mdi:vuejs" data-inline="false"></span>
+      <span class="iconify m-2 md:m-4" data-icon="mdi:nuxt" data-inline="false"></span>
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="mt-16">
     <div class="flex justify-center items-center text-base font-semibold text-gray-600">
       <h4 class="text-center">{{ title }}</h4>
-      <i class='bx bx-chevrons-down ml-1 mt-1'></i>
+      <span class="iconify ml-1 mt-1" data-icon="mdi:chevron-double-down" data-inline="false"></span>
     </div>
 
     <div class="wrapper-small my-5">
@@ -19,7 +19,7 @@
             <nuxt-link :to="post.path">
               <h2 class="text-xl font-semibold text-gray-800">{{ post.title }}</h2>
             </nuxt-link>
-            <p class="font-semibold text-gray-600 text-sm">{{ formatDate(post.createdAt) }}</p>
+            <p class="font-semibold text-gray-600 text-sm">{{ formatDate(post.date) }}</p>
             <span class="font-semibold text-gray-600 text-sm">Tags: {{ post.tags }}</span>
             <p class="text-base text-gray-700 my-1">{{ post.description }}</p>
             <nuxt-link :to="post.path" class="text-base font-semibold text-gray-700 my-3 hover:underline">Read more >
