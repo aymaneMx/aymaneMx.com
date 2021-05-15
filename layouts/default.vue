@@ -1,13 +1,15 @@
 <template>
-  <div class="flex flex-col h-screen justify-between">
-    <div class="">
-      <Header />
+  <div class="flex flex-col h-screen justify-between dark:bg-gray-900">
+    <div class="dark:bg-gray-900">
+      <Header/>
     </div>
-    <div class="mb-auto">
-      <Nuxt />
+
+    <div class="mb-auto dark:bg-gray-900">
+      <Nuxt/>
     </div>
-    <div class="h-10">
-      <Footer />
+
+    <div class="dark:bg-gray-900">
+      <Footer/>
     </div>
   </div>
 </template>

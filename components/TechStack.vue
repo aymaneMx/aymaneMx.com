@@ -1,6 +1,6 @@
 <template>
   <div class="mt-16 md:mt-24">
-    <div class="flex justify-center items-center text-base font-semibold text-gray-600">
+    <div class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300">
       <h4 class="text-center">Tech stack I use.</h4>
       <span class="iconify" data-icon="mdi:chevron-double-down" data-inline="false"></span>
     </div>

@@ -1,19 +1,17 @@
 <template>
   <div>
-    <nav class="wrapper py-6">
+    <nav class="wrapper py-6 dark:bg-gray-900">
       <div class="px-10 flex justify-between items-center">
         <div class="logo">
           <nuxt-link to="/">
-            <h1 class="text-2xl font-semibold text-gray-700"> <span class="text-primary font-bold">Aymane</span>Mx.</h1>
+            <h1 class="text-2xl font-semibold text-gray-700 dark:text-gray-200"> <span class="text-primary font-bold">Aymane</span>Mx.</h1>
           </nuxt-link>
         </div>
 
         <div class="flex flex-row">
-          <nuxt-link class="nav-link hover:text-primary" to="/posts">Blog</nuxt-link>
-          <nuxt-link class="nav-link hover:text-primary" to="/about">About</nuxt-link>
-          <nuxt-link class="nav-link hover:text-primary" to="/">
-            <span class="iconify" data-icon="carbon:sun" data-inline="false"></span>
-          </nuxt-link>
+          <nuxt-link class="nav-link" to="/posts">Blog</nuxt-link>
+          <nuxt-link class="nav-link" to="/about">About</nuxt-link>
+          <ColorSwitcher />
         </div>
 
 <!--        <div class="ml-3 flex md:hidden">-->
@@ -45,16 +43,22 @@
 
 
 <script>
+
+import ColorSwitcher from "~/components/ColorSwitcher";
+
 export default {
   data() {
     return {
       isOpen: false
     }
   },
+  components:{
+    ColorSwitcher,
+  },
   methods: {
     toggle() {
       this.isOpen = !this.isOpen
-    }
+    },
   }
 }
 </script>
@@ -64,6 +68,6 @@ export default {
   @apply block px-3 py-2 text-lg text-gray-900 rounded-md text-white font-medium text-center;
 }
 .nav-link{
-  @apply ml-5 font-medium text-center text-lg text-gray-700 m-auto;
+  @apply ml-5 font-medium text-center text-lg text-gray-700 dark:text-gray-200 dark:hover:text-primary hover:text-primary m-auto;
 }
 </style>
