@@ -11,6 +11,6 @@ export default {
 
 <template>
   <div class="wrapper p-5">
-    <nuxt-content class="prose prose-lg max-w-screen-lg mx-auto px-3 my-5" :document="post" />
+    <nuxt-content class="prose prose-lg max-w-screen-lg mx-auto px-3 my-5 dark:text-white" :document="post" />
   </div>
 </template>
