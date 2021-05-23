@@ -2,7 +2,7 @@
   <div class="mt-16">
     <div class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300">
       <h4 class="text-center">Open Source Projects</h4>
-      <span class="iconify ml-1 mt-1" data-icon="mdi:chevron-double-down" data-inline="false"></span>
+      <IconDoubleDown class="h-4 w-4"/>
     </div>
 
     <div class="wrapper-small my-5">
@@ -23,11 +23,11 @@
             </p>
             <ul class='flex items-center space-x-4 text-black dark:text-gray-200'>
               <li class='inline-flex items-center'>
-                <span class="iconify h-4 w-4 mr-1" data-icon="carbon:star" data-inline="false"></span>
+                <IconStar class="h-4 w-4 mr-1"/>
                 <span>{{ project.stargazers_count }}</span>
               </li>
               <li v-if='project.forks' class='inline-flex items-center'>
-                <span class="iconify h-4 w-4 mr-1" data-icon="fe:fork" data-inline="false"></span>
+                <IconFork class="h-4 w-4 mr-1"/>
                 <span>{{ project.forks }}</span>
               </li>
             </ul>
@@ -39,7 +39,7 @@
             href='https://github.com/aymaneMx'
             target='_blank'
           >
-            <span class='iconify text-white h-6 w-6 mr-3' data-icon="mdi:github"></span>
+            <IconGithub class="text-white h-6 w-6 mr-3"/>
             See more
           </a>
         </div>

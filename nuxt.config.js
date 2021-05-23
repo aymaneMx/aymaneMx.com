@@ -36,7 +36,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    'nuxt-purge-icons-module',
     '@nuxtjs/color-mode',
   ],
 

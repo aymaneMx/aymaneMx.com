@@ -2,7 +2,7 @@
   <div class="mt-16">
     <div class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300">
       <h4 class="text-center">{{ title }}</h4>
-      <span class="iconify ml-1 mt-1" data-icon="mdi:chevron-double-down" data-inline="false"></span>
+      <IconDoubleDown class="h-4 w-4"/>
     </div>
 
     <div class="wrapper-small my-5">
