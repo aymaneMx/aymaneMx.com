@@ -18,3 +18,10 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+## Credits 
+
+- :moon: The dark mode : https://github.com/eggsy/website
+- :art: the minimal design : https://github.com/dev-ggaurav/Monotone
+- :star: The open source section : https://github.com/MouadZIANI/mouadziani.com
