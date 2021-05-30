@@ -1,7 +1,7 @@
 <template>
   <div class="mt-16">
     <div class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300">
-      <h4 class="text-center">Open Source Projects</h4>
+      <h2 class="text-center">Open Source Projects</h2>
       <IconDoubleDown class="h-4 w-4"/>
     </div>
 
@@ -11,13 +11,14 @@
           v-for='(project, index) in projects'
           :key='index'
           target='_blank'
+          rel="noreferrer"
           class='block bg-gray-50 dark:bg-gray-800 p-6 shadow rounded-lg mt-2 lg:mt-0'
           :href='project.html_url'
         >
           <div>
-            <h5 class='text-lg font-medium text-gray-800 dark:text-gray-100'>
+            <h3 class='text-lg font-medium text-gray-800 dark:text-gray-100'>
               {{ project.name }}
-            </h5>
+            </h3>
             <p class='my-2 text-base text-gray-500 dark:text-gray-400'>
               {{ project.description }}
             </p>
@@ -38,9 +39,10 @@
             class='bg-black w-full md:w-auto flex items-center justify-center px-10 md:px-24 py-3 shadow-md hover:bg-gray-800 rounded-lg text-white'
             href='https://github.com/aymaneMx'
             target='_blank'
+            rel="noreferrer"
           >
             <IconGithub class="text-white h-6 w-6 mr-3"/>
-            See more
+            Check My Github Account
           </a>
         </div>
       </div>

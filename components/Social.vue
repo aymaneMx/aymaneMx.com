@@ -3,23 +3,23 @@
     <a
       class="social-link hover:text-primary mx-3"
       href="https://github.com/aymaneMx" aria-label="Github">
-      <IconGithub/>
+      <IconGithub class="h-6 w-6"/>
     </a>
 
     <a
       class="social-link hover:text-primary mx-3"
       href="https://twitter.com/aymane_max" aria-label="Twitter">
-      <IconTwitter/>
+      <IconTwitter class="h-6 w-6"/>
     </a>
 
     <a class="social-link hover:text-primary mx-3"
        href="https://aymanemx.medium.com/" aria-label="Medium">
-      <IconMedium/>
+      <IconMedium class="h-6 w-6"/>
     </a>
 
     <a class="social-link hover:text-primary mx-3"
        href="https://www.linkedin.com/in/aymane-mimouni/" aria-label="LinkedIn">
-      <IconLinkedin/>
+      <IconLinkedin class="h-6 w-6"/>
     </a>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="mt-16">
     <div class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300">
-      <h4 class="text-center">{{ title }}</h4>
+      <h2 class="text-center">{{ title }}</h2>
       <IconDoubleDown class="h-4 w-4"/>
     </div>
 
@@ -11,7 +11,8 @@
 
         <div class="img max-w-lg md:max-w-sm  mx-auto m-2">
           <nuxt-link :to="post.path">
-            <img :src="require(`~/assets/${post.cover}`)" :alt="post.title" class="rounded-xl">
+            <nuxt-img :src="`/imgs/${post.cover}`" :alt="post.title" class="rounded-xl"/>
+<!--            <img :src="require(`~/assets/${post.cover}`)" :alt="post.title" class="rounded-xl">-->
           </nuxt-link>
         </div>
         <div class="flex flex-col justify-between max-w-lg mx-auto">
