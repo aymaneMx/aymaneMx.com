@@ -42,7 +42,7 @@
             rel="noreferrer"
           >
             <IconGithub class="text-white h-6 w-6 mr-3"/>
-            Check My Github Account
+            See More Projects
           </a>
         </div>
       </div>
