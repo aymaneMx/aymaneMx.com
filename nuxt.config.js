@@ -37,13 +37,13 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxt/image'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
-    '@nuxtjs/axios',
-    '@nuxt/image',
+    '@nuxtjs/axios'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
