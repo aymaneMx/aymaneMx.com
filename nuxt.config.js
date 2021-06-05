@@ -65,5 +65,9 @@ export default {
         rel: 'nofollow'
       }
     },
+  },
+
+  pwa: {
+    icon: false // disables the icon module
   }
 }
