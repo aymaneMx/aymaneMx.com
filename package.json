@@ -14,7 +14,8 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@tailwindcss/typography": "^0.4.0",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.6"
+    "nuxt": "^2.15.6",
+    "remark-emoji": "^2.2.0"
   },
   "devDependencies": {
     "@nuxt/image": "^0.4.13",

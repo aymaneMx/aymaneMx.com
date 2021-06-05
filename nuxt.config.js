@@ -52,5 +52,18 @@ export default {
   },
   colorMode: {
     classSuffix: ''
+  },
+
+  content: {
+    markdown: {
+      remarkPlugins: [
+        ['remark-emoji', { emoticon: true }]
+      ],
+      // https://github.com/remarkjs/remark-external-links#options
+      remarkExternalLinks: {
+        target: '_self',
+        rel: 'nofollow'
+      }
+    },
   }
 }
