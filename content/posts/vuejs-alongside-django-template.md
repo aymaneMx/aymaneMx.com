@@ -19,7 +19,7 @@ This post aims to show that you can start to use Vue with your Django projects i
 
 ## A Demo App
 
-![demo task app](~/assets/demo-task-app.png)
+![demo task app](https://miro.medium.com/max/700/1*Ekn2UmjkdM6H6oJNZHt45A.png)
 
 For a demo, I made a simple todo app, so I can play around with vue.js alongside the Django template.
 

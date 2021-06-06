@@ -105,9 +105,9 @@ byteImg.save(filename + '.png', 'PNG')
 
 Run, and the result will be a PNG image like this:
 
-![avatars initials a](/_nuxt/assets/avatars-initials-a.png)
+![avatars initials a](https://miro.medium.com/max/700/1*qaJFwAs4AZMKjQBlUyHtUQ.png)
 
-![coool gif](~/assets/cool.gif)
+![coool gif](https://miro.medium.com/max/426/1*X4foLqSQYCyPo_vE4xDJGg.gif)
 
 While playing with the SVG template, I discovered that I can make an icon or a logo instead of a text, which brings us to the next part.
 
@@ -174,7 +174,7 @@ byteImg.save(filename + '.png', 'PNG')
 
 The result will be something like this:
 
-![avatars logo twitter](~/assets/avatars-logo-twitter.png)
+![avatars logo twitter](https://miro.medium.com/max/700/1*r3OQH63muulNGYGZE7q2PQ.png)
 
 > Now, you are maybe wondering how can I get a SVG file of my logo?
 
@@ -182,7 +182,7 @@ The answer is you can ask your designer gently for it, or you can do it yourself
 
 But the simple way, (which is why you're here) is by using an online tool as [online-convert](https://image.online-convert.com/convert-to-svg), I use it for my shitty logo, and here is the result.
 
-![avatars logo aymaneMx](~/assets/avatars-logo-mine.png)
+![avatars logo aymaneMx](https://miro.medium.com/max/700/1*O2HAKqluGJlu-S5V0ycvZA.png)
 
 Isn’t so fancy!!
 

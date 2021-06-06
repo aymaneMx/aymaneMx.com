@@ -12,7 +12,7 @@ This is a beginner guide on how to set up a vue.js app running on Vite, I’ll a
 
 So, let’s begin!
 
-### Set up Vite.js
+## Set up Vite.js
 
 Wait, what the heck is Vite.js?
 
@@ -26,7 +26,7 @@ If you're using `npm`, just run this command and follow the steps;
 $ npm init @vitejs/app
 ```
 
-### Set up Tailwind CSS
+## Set up Tailwind CSS
 
 ```bash
 $ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
@@ -60,7 +60,7 @@ createApp(App).mount('#app')
 
 see [doc](https://tailwindcss.com/docs/guides/vue-3-vite) for more.
 
-### Install ESLint & Prettier
+## Install ESLint & Prettier
 
 ```bash
 $ npm install --save-dev eslint prettier eslint-plugin-vue eslint-config-prettier
@@ -97,7 +97,7 @@ module.exports = {
 }
 ```
 
-### Install Vue Router
+## Install Vue Router
 
 For what! why we need Vue Router?
 
@@ -148,7 +148,7 @@ import router from "./router/index"
 createApp(App).use(router).mount('#app')
 ```
 
-### Install Vuex
+## Install Vuex
 
 It’s basically a state management library, that you probably won’t need it if you’re building a simple app.
 
@@ -166,7 +166,7 @@ Finally, here's the source code for my demo app:
 
 Enjoy! And see you next time.
 
-### Resources:
+## Resources:
 
 - [Getting started with Vite, a no bundler DEV environment for Vue.js](https://medium.com/@wearethreebears/getting-started-with-vite-a-no-bundler-dev-environment-for-vue-js-217a6eb7c9d0).
 - [Getting started with Vue 3 + Vite in 2021](https://youtu.be/O8epzPrsADI).

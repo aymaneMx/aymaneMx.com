@@ -48,7 +48,7 @@ Before I start talking about graphql using python, I'd like to highlight two con
 When creating a GraphQL service, we can decide to have the schema be the source of truth and let all our implementation code match its definitions, or we can have our code be the source of truth and have the schema be an artifact generated from the code. The two approaches are called, respectively, schema-first and code-first.
 
 ### Schema-first
-Schema-first indicates that we first define the schema for the GraphQL service and then we implement the code by matching the definitions in the schema. The most popular Python library for implementing GraphQL servers using schema-first approach is [Ariadne](https://github.com/mirumee/ariadne/); it's quite new, simple to use and open for extension.
+Schema-first indicates that we first define the schema for the GraphQL service, and then we implement the code by matching the definitions in the schema. The most popular Python library for implementing GraphQL servers using schema-first approach is [Ariadne](https://github.com/mirumee/ariadne/); it's quite new, simple to use and open for extension.
 
 ### Code-first
 In the code-first approach, we start by coding the resolvers, and then, from code as a single source of truth, we have the schema generated as an artifact. Thus, we still have a schema, but instead of being manually created, it is created through running a script. This approach may also be called resolver-first.
@@ -143,12 +143,12 @@ Letting this kind of query through is very bad, since it exponentially increases
 
 To prevent bad queries to happen we can adopt various solutions:
 - **Timeouts:** Check how long a query is taking, if it is taking more than 1 second you can kill it.
-- **Limits on nested fields:** You can parse the incoming GraphQL request and deny queries that are requesting for fields that are too nested. For example you can only allow for maxing 3 levels of nesting and no more.
+- **Limits on nested fields:** You can parse the incoming GraphQL request and deny queries that are requesting for fields that are too nested. For example, you can only allow for maxing 3 levels of nesting and no more.
 - **Query cost:** This is useful if you have third party clients and when you also want to limit their API usage.
 - **Hide introspection for production mode** (this is not common solution, but sounds good).
 
 
-unfortunately, there is no official answers to this problems in Graphene, but All this approaches can be implemented by creating a middleware and a custom backend.
+unfortunately, there is no official answers to these problems in Graphene, but All this approaches can be implemented by creating a middleware and a custom backend.
 
 ## Problems & Limitations
 
@@ -161,16 +161,16 @@ thankfully, [@jaydenseric](https://github.com/jaydenseric) has come up with a [s
 So, if you're working on high-load back-end, Better to avoid Graphql, as it is harder to optimize.
 
 
-The problems mentioned above are related only to Graphene!, here is the ones related to Graphql itself:
+The problems mentioned above are related only to Graphene!, here are the ones related to Graphql itself:
 
-- The queries always return a HTTP status code of 200, regardless of whether or not that query was successful. If the query is unsuccessful, the response JSON will have a top-level errors key with associated error messages and stacktrace. This can make it much more difficult to do error handling and can lead to additional complexity for things like monitoring.
+- The queries always return an HTTP status code of 200, regardless of whether that query was successful. If the query is unsuccessful, the response JSON will have a top-level error key with associated error messages and stacktrace. This can make it much more difficult to do error handling and can lead to additional complexity for things like monitoring.
 
-- Another disadvantage is the lack of built-in caching support. Because REST APIs have multiple endpoints, they can leverage native HTTP caching to avoid refetching resources. With GraphQL, you will need to setup your own caching support which means relying on another library, or setting up something like globally unique IDs for your backend.
+- Another disadvantage is the lack of built-in caching support. Because REST APIs have multiple endpoints, they can leverage native HTTP caching to avoid refetching resources. With GraphQL, you will need to set up your own caching support which means relying on another library, or setting up something like globally unique IDs for your backend.
 
 ## Summary
 
 To sum up:
-- GraphQL is a great tool for data exchange between backend and frontend, while using it has several downsides..
+- GraphQL is a great tool for data exchange between the backend and frontend, while using it has several downsides...
 - Despite the limitations, Graphene is still the most developed GraphQL framework for Python.
 
 By reading this article, I would suppose that you know enough to decide whether you will use GraphQl in your next Django project or not.

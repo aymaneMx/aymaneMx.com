@@ -40,7 +40,7 @@ I will be using Docker to run Elasticsearch.
 
 Here is the [source code](https://github.com/aymaneMx/django-elasticsearch) I will be using, so you can see exactly what is going on.
 
-![let us begin](~/assets/let-us-begin.gif)
+![let us begin](https://miro.medium.com/max/432/1*DDOQkN585MAvdWoBnafEYw.gif)
 
 ### Elasticsearch instance
 
