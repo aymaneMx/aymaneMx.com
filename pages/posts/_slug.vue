@@ -1,5 +1,34 @@
 <script>
 export default {
+  data() {
+    return {
+      post: null,
+    }
+  },
+  head() {
+    const post = this.post
+    const title = post.title
+    const description = post.description || "aymaneMx's blog about python, django, vuejs."
+    const image = this.getPostImage
+    const tags = post.tags || title
+    const href = `https://nuxt.aymanemx.com/posts/${post.slug}`
+    const meta = this.$prepareMeta(
+      {title, description, image, keywords: `${tags}`, url: href},
+      [{name: "article:published-time", content: post?.createdAt || null},]
+    )
+    return {
+      title,
+      link: [{rel: "canonical", href}],
+      meta: meta,
+    }
+  },
+  computed: {
+    getPostImage(){
+      return this.post?.cover
+        ? `https://nuxt.aymanemx.com/thumbnails/${this.post?.cover}`
+        : `https://nuxt.aymanemx.com/icon.png`
+    },
+  },
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch()
     return { post }
