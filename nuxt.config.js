@@ -14,7 +14,14 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'aymaneMx -- django developer' }
+      { hid: 'description', name: 'description', content: 'aymaneMx -- django developer' },
+      /* Twitter */
+      {hid: "twitter:card", name: "twitter:card", content: "summary"},
+      {hid: "twitter:site", name: "twitter:site", content: "@aymane_max"},
+      {hid: "twitter:creator", name: "twitter:creator", content: "@aymane_max"},
+      {hid: "twitter:title", name: "twitter:title", content: "aymaneMx.com"},
+      {hid: "twitter:description", name: "twitter:description", content: 'aymaneMx -- django developer'},
+      {hid: "twitter:image", name: "twitter:image", content: '/favicon.png'},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
@@ -27,6 +34,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    "@/plugins/util",
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
