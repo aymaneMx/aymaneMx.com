@@ -10,24 +10,12 @@ export default {
     const title = post.title
     const description = post.description || "aymaneMx's blog about python, django, vuejs."
     const image = this.getPostImage
-    const tags = this.getTags || title
+    const tags = post.tags || title
     const href = `https://nuxt.aymanemx.com/posts/${post.slug}`
     const meta = this.$prepareMeta(
-      {
-        title,
-        description,
-        image,
-        keywords: `${tags}`,
-        url: href,
-      },
-      [
-        {
-          name: "article:published-time",
-          content: post?.createdAt || null,
-        },
-      ]
+      {title, description, image, keywords: `${tags}`, url: href},
+      [{name: "article:published-time", content: post?.createdAt || null},]
     )
-    console.log(meta)
     return {
       title,
       link: [{rel: "canonical", href}],
@@ -35,9 +23,6 @@ export default {
     }
   },
   computed: {
-    getTags(){
-      return this.post?.tags || []
-    },
     getPostImage(){
       return this.post?.cover
         ? `https://nuxt.aymanemx.com/thumbnails/${this.post?.cover}`
