@@ -4,7 +4,6 @@ export default {
     title: "About"
   },
   async asyncData({ $content, params }) {
-    console.log($content, params)
     const post = await $content('about', params.slug).fetch()
     return { post }
   }

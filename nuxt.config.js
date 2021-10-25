@@ -45,7 +45,8 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
-    '@nuxt/image'
+    '@nuxt/image',
+    'vue-notion/nuxt',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -65,7 +66,7 @@ export default {
   content: {
     markdown: {
       remarkPlugins: [
-        ['remark-emoji', { emoticon: true }]
+        // ['remark-emoji', { emoticon: true }]
       ],
       // https://github.com/remarkjs/remark-external-links#options
       remarkExternalLinks: {

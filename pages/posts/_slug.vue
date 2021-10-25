@@ -7,11 +7,11 @@ export default {
   },
   head() {
     const post = this.post
-    const title = post.title
-    const description = post.description || "aymaneMx's blog about python, django, vuejs."
+    const title = post?.title
+    const description = post?.description || "aymaneMx's blog about python, django, vuejs."
     const image = this.getPostImage
     const tags = post.tags || title
-    const href = `https://nuxt.aymanemx.com/posts/${post.slug}`
+    const href = `https://nuxt.aymanemx.com${post.path}`
     const meta = this.$prepareMeta(
       {title, description, image, keywords: `${tags}`, url: href},
       [{name: "article:published-time", content: post?.createdAt || null},]
