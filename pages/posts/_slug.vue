@@ -1,20 +1,30 @@
 <script>
+import 'prismjs'
+import 'prismjs/themes/prism-tomorrow.css'
+import 'prismjs/components/prism-bash'
+import 'prismjs/components/prism-shell-session'
+import 'prismjs/components/prism-json'
+import 'prismjs/components/prism-python'
+import 'prismjs/components/prism-yaml'
+import 'prismjs/components/prism-graphql'
+import 'prismjs/components/prism-javascript'
+
 export default {
   data() {
     return {
-      post: null,
+      pageLinkOptions: { component: "NuxtLink", href: "to" },
     }
   },
   head() {
-    const post = this.post
+    const post = this.page
     const title = post?.title
     const description = post?.description || "aymaneMx's blog about python, django, vuejs."
-    const image = this.getPostImage
+    const image = post?.thumbnail.rawUrl || null
     const tags = post.tags || title
-    const href = `https://nuxt.aymanemx.com${post.path}`
+    const href = `https://nuxt.aymanemx.com/posts/${post.slug}`
     const meta = this.$prepareMeta(
       {title, description, image, keywords: `${tags}`, url: href},
-      [{name: "article:published-time", content: post?.createdAt || null},]
+      [{name: "article:published-time", content: post?.created_at || null},]
     )
     return {
       title,
@@ -22,68 +32,39 @@ export default {
       meta: meta,
     }
   },
-  computed: {
-    getPostImage(){
-      return this.post?.cover
-        ? `https://nuxt.aymanemx.com/thumbnails/${this.post?.cover}`
-        : `https://nuxt.aymanemx.com/icon.png`
-    },
-  },
-  async asyncData({ $content, params }) {
-    const post = await $content('posts', params.slug).fetch()
-    return { post }
+  async asyncData({ $notion, params, error }) {
+    const pageTable = await $notion.getPageTable(
+      "ceef6f1a895a46b2a0e4a87b41405547"
+    )
+    const page = pageTable.find(
+      (item) => item.public && item.slug === params.slug
+    )
+    const blockMap = await $notion.getPageBlocks(page ? page.id : params.slug)
+    if (!blockMap || blockMap.error) {
+      return error({ statusCode: 404, message: "Post not found" })
+    }
+    return { blockMap, page}
   }
 }
 </script>
 
 
 <template>
-  <div class="wrapper p-5 mt-20">
-    <div class="max-w-screen-lg mx-auto px-3 py-5">
-      <h1 class="text-6xl text-gray-800 font-medium dark:text-gray-100"> {{ post.title }}</h1>
-<!--      <p class="text-sm text-gray-700 font-semibold mt-5">{{ post.date }} · 5min read</p>-->
-<!--      <p class="text-sm font-semibold mt-2">{{ post.tags }}</p>-->
-      <div class="img max-w-full mx-auto m-5">
-        <nuxt-img :src="`/imgs/${post.cover}`" :alt="post.title" class="rounded-xl shadow-lg"/>
-      </div>
-    </div>
-    <nuxt-content class="prose prose-lg max-w-screen-lg mx-auto px-3 my-5 dark:text-gray-100" :document="post" />
-  </div>
+  <NotionRenderer
+    :blockMap="blockMap"
+    :pageLinkOptions="pageLinkOptions"
+    fullPage prism/>
 </template>
 
 
 
 <style>
-.nuxt-content blockquote {
+@import "vue-notion/src/styles.css";
+
+.notion-title, .notion-text, .notion-list, .notion-callout-text, p , h1, h2, h3, h4, span {
   @apply dark:text-white;
 }
-.nuxt-content p a {
-  @apply dark:text-gray-50;
-  @apply dark:hover:text-primary;
-}
-.nuxt-content li a {
-  @apply dark:text-gray-50;
-  @apply dark:hover:text-primary;
-}
-.nuxt-content h1, h2, h3, h4 {
-  @apply dark:text-gray-50;
-}
-.nuxt-content strong {
-  @apply dark:text-gray-50;
-}
-.nuxt-content h2 code {
-  @apply dark:text-purple-300;
-}
-.nuxt-content h3 code {
-  @apply dark:text-purple-300;
-}
-.nuxt-content h4 code {
-  @apply dark:text-purple-300;
-}
-.nuxt-content li code {
-  @apply dark:text-purple-300;
-}
-.nuxt-content p code {
-  @apply dark:text-purple-300;
+.notion-link{
+  @apply dark:hover:bg-red-500;
 }
 </style>
