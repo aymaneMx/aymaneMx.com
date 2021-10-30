@@ -3,17 +3,31 @@ export default {
   head: {
     title: "About"
   },
-  async asyncData({ $content, params }) {
-    console.log($content, params)
-    const post = await $content('about', params.slug).fetch()
-    return { post }
-  }
+  data: () => ({ blockMap: null }),
+  async asyncData({ $notion }) {
+    const blockMap = await $notion.getPageBlocks(
+      "ad2346af0894443d8906cf78de4f310f"
+    );
+    return { blockMap }
+  },
 }
 </script>
 
 
 <template>
-  <div class="wrapper p-5">
-    <nuxt-content class="prose prose-lg max-w-screen-lg mx-auto px-3 my-5 dark:text-white" :document="post" />
-  </div>
+  <NotionRenderer
+    :blockMap="blockMap"
+    fullPage prism/>
 </template>
+
+
+<style>
+@import "vue-notion/src/styles.css";
+
+.notion-title, .notion-text, .notion-list, .notion-callout-text, p , h1, h2, h3, h4, span {
+  @apply dark:text-white;
+}
+.notion-link{
+  @apply dark:hover:bg-red-500;
+}
+</style>

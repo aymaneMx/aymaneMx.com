@@ -18,15 +18,10 @@ export default {
         }
       ]
   },
-  methods:{
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
-    }
-  },
-  async asyncData({ $content}) {
-    const posts = await $content("posts").sortBy('date', "desc").fetch()
+  async asyncData({ $notion, params, error }) {
+    const pageTable = await $notion.getPageTable("ceef6f1a895a46b2a0e4a87b41405547")
+    const posts = pageTable.filter((page) => page.public).sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
     return { posts }
-  },
+  }
 }
 </script>
