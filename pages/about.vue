@@ -5,7 +5,6 @@ export default {
   },
   data: () => ({ blockMap: null }),
   async asyncData({ $notion }) {
-    // use Notion module to get Notion blocks from the API via a Notion pageId
     const blockMap = await $notion.getPageBlocks(
       "ad2346af0894443d8906cf78de4f310f"
     );

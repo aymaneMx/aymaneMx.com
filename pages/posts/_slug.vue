@@ -19,7 +19,7 @@ export default {
     const post = this.page
     const title = post?.title
     const description = post?.description || "aymaneMx's blog about python, django, vuejs."
-    const image = post?.thumbnail.rawUrl || null
+    const image = post?.thumbnail[0].url || null
     const tags = post.tags || title
     const href = `https://nuxt.aymanemx.com/posts/${post.slug}`
     const meta = this.$prepareMeta(
