@@ -25,3 +25,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - :moon: The dark mode : https://github.com/eggsy/website
 - :art: the minimal design : https://github.com/dev-ggaurav/Monotone
 - :star: The open source section : https://github.com/MouadZIANI/mouadziani.com
+
+
+## TODO 
+
+- [ ] 404 page.
+- [ ] score 100 in auditing tools like `lighthouse`.
+- [ ] integrate google analytics
+- [ ] fix metadata (double check: https://nuxtjs.org/docs/features/meta-tags-seo/) 
+- [ ] generate sitemap (https://sitemap.nuxtjs.org/fr/)

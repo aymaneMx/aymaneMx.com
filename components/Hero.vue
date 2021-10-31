@@ -5,7 +5,7 @@
         <span class="font-normal dark:text-gray-300"> Hey, I am </span>Aymane MIMOUNI</h2>
       <h3 class="font-bold text-primary dark:text-primary text-2xl md:text-3xl lg:text-4xl">a Software Engineer</h3>
       <p class="text-lg lg:text-xl font-semibold">and a passionate Python developer from Morocco</p>
-      <p class="text-lg lg:text-xl font-semibold">Who loves to build and deliver quality products.</p>
+      <p class="text-lg lg:text-xl font-semibold">who loves to build and deliver quality products.</p>
 
       <div class="mt-5">
         <TechStack/>
