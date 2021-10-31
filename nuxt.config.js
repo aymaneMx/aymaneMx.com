@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
+  // ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
@@ -46,13 +46,13 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     'vue-notion/nuxt',
+    '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxt/image',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -61,4 +61,8 @@ export default {
   colorMode: {
     classSuffix: ''
   },
+
+  optimizedImages: {
+    optimizeImages: true
+  }
 }

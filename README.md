@@ -34,3 +34,4 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - [ ] integrate google analytics
 - [ ] fix metadata (double check: https://nuxtjs.org/docs/features/meta-tags-seo/) 
 - [ ] generate sitemap (https://sitemap.nuxtjs.org/fr/)
+- [ ] set up `ESLint` and `Prettier`

@@ -11,7 +11,7 @@
 
         <div class="img max-w-lg md:max-w-sm  mx-auto m-2">
           <nuxt-link :to="`/posts/${post.slug}`">
-            <nuxt-img :src="`${post.thumbnail[0].url}`" :alt="post.title" class="rounded-xl"/>
+            <img :src="`${post.thumbnail[0].url}`" :alt="post.title" class="rounded-xl"/>
           </nuxt-link>
         </div>
         <div class="flex flex-col justify-between max-w-lg mx-auto">
