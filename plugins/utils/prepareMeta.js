@@ -14,9 +14,9 @@
  * special thanks to this dude!
  */
 export default function prepareMeta(
-  { title, description, url, image, keywords },
+  {title, description, url, image, keywords},
   rest
-){
+) {
   const meta = []
 
   if (title)
@@ -90,8 +90,8 @@ export default function prepareMeta(
 
   if (typeof rest === "object")
     rest.forEach((item) => {
-      const { name, content, ...rest } = item
-      meta.push({ name, content, ...rest })
+      const {name, content, ...rest} = item
+      meta.push({name, content, ...rest})
     })
 
   if (meta.length === 0) return []

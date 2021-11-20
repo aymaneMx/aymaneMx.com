@@ -3,12 +3,12 @@ export default {
   head: {
     title: "About"
   },
-  data: () => ({ blockMap: null }),
-  async asyncData({ $notion }) {
+  data: () => ({blockMap: null}),
+  async asyncData({$notion}) {
     const blockMap = await $notion.getPageBlocks(
       "ad2346af0894443d8906cf78de4f310f"
     );
-    return { blockMap }
+    return {blockMap}
   },
 }
 </script>
@@ -24,10 +24,11 @@ export default {
 <style>
 @import "vue-notion/src/styles.css";
 
-.notion-title, .notion-text, .notion-list, .notion-callout-text, p , h1, h2, h3, h4, span {
-  @apply dark:text-white;
+.notion-title, .notion-text, .notion-list, .notion-callout-text, p, h1, h2, h3, h4, span {
+  @apply dark: text-white;
 }
-.notion-link{
-  @apply dark:hover:bg-red-500;
+
+.notion-link {
+  @apply dark: hover: bg-red-500;
 }
 </style>

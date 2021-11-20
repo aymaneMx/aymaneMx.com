@@ -1,9 +1,6 @@
 module.exports = {
   darkMode: 'class',
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
+  future: {},
   purge: [],
   theme: {
     extend: {
@@ -12,7 +9,5 @@ module.exports = {
       }
     },
   },
-  plugins: [
-    // require('@tailwindcss/typography'),
-  ],
+  plugins: [],
 }

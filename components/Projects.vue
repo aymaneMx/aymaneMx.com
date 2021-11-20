@@ -10,10 +10,10 @@
         <a
           v-for='(project, index) in projects'
           :key='index'
-          target='_blank'
-          rel="noreferrer"
-          class='block bg-gray-50 dark:bg-gray-800 p-6 shadow rounded-lg mt-2 lg:mt-0'
           :href='project.html_url'
+          class='block bg-gray-50 dark:bg-gray-800 p-6 shadow rounded-lg mt-2 lg:mt-0'
+          rel="noreferrer"
+          target='_blank'
         >
           <div>
             <h3 class='text-lg font-medium text-gray-800 dark:text-gray-100'>
@@ -38,8 +38,8 @@
           <a
             class='bg-black w-full md:w-auto flex items-center justify-center px-10 md:px-24 py-3 shadow-md hover:bg-gray-800 rounded-lg text-white'
             href='https://github.com/aymaneMx'
-            target='_blank'
             rel="noreferrer"
+            target='_blank'
           >
             <IconGithub class="text-white h-6 w-6 mr-3"/>
             See More Projects
