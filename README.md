@@ -28,8 +28,7 @@ $ npm run dev
 
 ## TODO 
 
-- [ ] 404 page.
 - [ ] score 100 in auditing tools like `lighthouse`.
-- [ ] integrate google analytics
+- [x] integrate google analytics
 - [x] fix metadata (double check: https://nuxtjs.org/docs/features/meta-tags-seo/) 
 - [x] generate sitemap (https://sitemap.nuxtjs.org/fr/)
