@@ -45,6 +45,7 @@ export default {
     '@nuxtjs/color-mode',
     'vue-notion/nuxt',
     '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -71,5 +72,10 @@ export default {
       const pageTable = await notion.getPageTable("ceef6f1a895a46b2a0e4a87b41405547")
       return pageTable.filter((item) => !!item.public).map((item) => `/posts/${item.slug}`)
     }
+  },
+
+  // Google Analytics Configuration: https://google-analytics.nuxtjs.org
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID,
   }
 }
