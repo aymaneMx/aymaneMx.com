@@ -1,5 +1,14 @@
 # aymaneMx.com
 
+## Features 
+
+- :moon: The dark mode 
+- :art: Responsive
+- :hammer: Render articles from notion 
+- Eslint/Prettier configured
+- :star: Fetches your Github pinned projects with most stars
+- :gear: google analytics integration 
+
 ## Build Setup
 
 ```bash
@@ -8,17 +17,7 @@ $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
 
 ## Credits 
 
@@ -33,4 +32,4 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - [ ] score 100 in auditing tools like `lighthouse`.
 - [ ] integrate google analytics
 - [x] fix metadata (double check: https://nuxtjs.org/docs/features/meta-tags-seo/) 
-- [ ] generate sitemap (https://sitemap.nuxtjs.org/fr/)
+- [x] generate sitemap (https://sitemap.nuxtjs.org/fr/)
