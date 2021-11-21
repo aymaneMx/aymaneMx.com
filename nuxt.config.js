@@ -1,7 +1,4 @@
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  // ssr: true,
-
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -46,7 +43,6 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     'vue-notion/nuxt',
@@ -56,7 +52,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
