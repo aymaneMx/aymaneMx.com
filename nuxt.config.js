@@ -65,6 +65,7 @@ export default {
 
   // Sitemap Configuration: https://sitemap.nuxtjs.org/usage/sitemap-options#from-a-function-which-returns-a-promise
   sitemap: {
+    hostname: process.env.SITEMAP_HOSTNAME,
     routes: async () => {
       const notion = require('vue-notion')
       const pageTable = await notion.getPageTable("ceef6f1a895a46b2a0e4a87b41405547")
