@@ -22,7 +22,8 @@
             <p class="font-semibold text-gray-600 dark:text-gray-300 text-sm">{{ formatDate(post.created_at) }}</p>
             <div class="flex flex-col justify-between max-w-lg mx-auto">
             </div>
-            <span v-for="tag of post.tags" :key="tag"
+            <span
+v-for="tag of post.tags" :key="tag"
                   class="font-semibold text-gray-600 bg-opacity-25 dark:bg-opacity-40 dark:text-gray-300 text-sm rounded bg-gray-200 dark:bg-primary mr-1 px-1">
               #{{ tag }}
             </span>

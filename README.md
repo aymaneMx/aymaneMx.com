@@ -32,5 +32,5 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - [ ] 404 page.
 - [ ] score 100 in auditing tools like `lighthouse`.
 - [ ] integrate google analytics
-- [ ] fix metadata (double check: https://nuxtjs.org/docs/features/meta-tags-seo/) 
+- [x] fix metadata (double check: https://nuxtjs.org/docs/features/meta-tags-seo/) 
 - [ ] generate sitemap (https://sitemap.nuxtjs.org/fr/)

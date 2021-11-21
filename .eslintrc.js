@@ -16,5 +16,9 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    "no-console": "warn",
+    "vue/multi-word-component-names": "warn",
+    "vue/no-dupe-keys": "warn"
+  }
 }
