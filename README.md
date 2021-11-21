@@ -2,12 +2,13 @@
 
 ## Features 
 
-- :moon: The dark mode 
-- :art: Responsive
-- :hammer: Render articles from notion 
-- Eslint/Prettier configured
-- :star: Fetches your Github pinned projects with most stars
-- :gear: google analytics integration 
+- :smiling_face_with_three_hearts: minimal and clean portfolio 
+- :last_quarter_moon: the dark/light mode (Auto detect the system color-mode)
+- :iphone: responsive (tablet & mobile friendly)
+- :gear: render articles from notion 
+- :star: fetches your Github pinned projects with most stars
+- :dizzy: Eslint & Prettier configured
+- :chart_with_upwards_trend: google analytics integration 
 
 ## Build Setup
 
@@ -23,7 +24,7 @@ $ npm run dev
 
 - :moon: The dark mode : https://github.com/eggsy/website
 - :art: the minimal design : https://github.com/dev-ggaurav/Monotone
-- :star: The open source section : https://github.com/MouadZIANI/mouadziani.com
+- :star: The open source section : https://github.com/MouadZIANI/mouadziani.com and https://github.com/smakosh/smakosh.com
 
 
 ## TODO 
