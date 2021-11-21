@@ -1,16 +1,11 @@
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  // ssr: true,
-
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'aymaneMx.com',
-    htmlAttrs: {
-      lang: 'en'
-    },
+    htmlAttrs: {lang: 'en'},
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
@@ -46,7 +41,6 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     'vue-notion/nuxt',
@@ -56,7 +50,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    '@nuxtjs/sitemap'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -68,4 +62,14 @@ export default {
   optimizedImages: {
     optimizeImages: true
   },
+
+  // Sitemap Configuration: https://sitemap.nuxtjs.org/usage/sitemap-options#from-a-function-which-returns-a-promise
+  sitemap: {
+    hostname: process.env.SITEMAP_HOSTNAME,
+    routes: async () => {
+      const notion = require('vue-notion')
+      const pageTable = await notion.getPageTable("ceef6f1a895a46b2a0e4a87b41405547")
+      return pageTable.filter((item) => !!item.public).map((item) => `/posts/${item.slug}`)
+    }
+  }
 }
