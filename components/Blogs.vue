@@ -7,11 +7,11 @@
 
     <div class="wrapper-small my-5">
 
-      <div class="project-card md:flex mt-10" v-for="post of posts" :key="post.slug">
+      <div v-for="post of posts" :key="post.slug" class="project-card md:flex mt-10">
 
         <div class="img max-w-lg md:max-w-sm  mx-auto m-2">
           <nuxt-link :to="`/posts/${post.slug}`">
-            <img :src="`${post.thumbnail[0].url}`" :alt="post.title" class="rounded-xl"/>
+            <img :alt="post.title" :src="`${post.thumbnail[0].url}`" class="rounded-xl"/>
           </nuxt-link>
         </div>
         <div class="flex flex-col justify-between max-w-lg mx-auto">
@@ -22,11 +22,14 @@
             <p class="font-semibold text-gray-600 dark:text-gray-300 text-sm">{{ formatDate(post.created_at) }}</p>
             <div class="flex flex-col justify-between max-w-lg mx-auto">
             </div>
-            <span v-for="tag of post.tags" class="font-semibold text-gray-600 bg-opacity-25 dark:bg-opacity-40 dark:text-gray-300 text-sm rounded bg-gray-200 dark:bg-primary mr-1 px-1">
+            <span v-for="tag of post.tags" :key="tag"
+                  class="font-semibold text-gray-600 bg-opacity-25 dark:bg-opacity-40 dark:text-gray-300 text-sm rounded bg-gray-200 dark:bg-primary mr-1 px-1">
               #{{ tag }}
             </span>
             <p class="text-base text-gray-700 dark:text-gray-200 my-1">{{ post.description }}</p>
-            <nuxt-link :to="`/posts/${post.slug}`" class="text-base font-semibold text-gray-700 dark:text-gray-200 my-3 hover:underline">
+            <nuxt-link
+              :to="`/posts/${post.slug}`"
+              class="text-base font-semibold text-gray-700 dark:text-gray-200 my-3 hover:underline">
               Read more >
             </nuxt-link>
           </div>
@@ -40,12 +43,18 @@
 <script>
 export default {
   props: {
-    title: "",
-    posts: {},
+    title: {
+      type: String,
+      default: "Blogs",
+    },
+    posts: {
+      type: Array,
+      default() {return []}
+    },
   },
-  methods:{
+  methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      const options = {year: 'numeric', month: 'long', day: 'numeric'}
       return new Date(date).toLocaleDateString('en', options)
     }
   },

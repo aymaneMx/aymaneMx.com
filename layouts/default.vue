@@ -15,13 +15,15 @@
 </template>
 
 <style>
-.wrapper{
+.wrapper {
   @apply max-w-screen-xl mx-auto;
 }
-.wrapper-small{
+
+.wrapper-small {
   @apply max-w-screen-lg mx-auto px-6;
 }
-.flex-center{
+
+.flex-center {
   @apply flex justify-center items-center;
 }
 </style>
