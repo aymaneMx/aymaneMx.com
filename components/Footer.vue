@@ -5,7 +5,8 @@
       <div class="flex flex-col items-center justify-between mt-6 md:mt-0 md:flex-row">
         <div class="logo flex items-center">
           <p class="text-sm text-gray-700 dark:text-gray-200 mx-1">© 2021 aymaneMx Built with ♡ </p>
-          <a aria-label="AymaneMx.com" class="text-sm text-gray-700 dark:text-gray-200"
+          <a
+aria-label="AymaneMx.com" class="text-sm text-gray-700 dark:text-gray-200"
              href="https://github.com/aymaneMx/aymaneMx.com">Open sourced on Github</a>
         </div>
 

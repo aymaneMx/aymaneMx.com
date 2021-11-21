@@ -3,7 +3,7 @@ export default {
   // ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -22,6 +22,11 @@ export default {
       {hid: "twitter:title", name: "twitter:title", content: "aymaneMx.com"},
       {hid: "twitter:description", name: "twitter:description", content: 'aymaneMx -- django developer'},
       {hid: "twitter:image", name: "twitter:image", content: '/favicon.png'},
+      /* Open-Graph */
+      {hid: "og:type", name: "og:type", content: "website"},
+      {hid: "og:site_name", name: "og:site_name", content: "aymaneMx.com"},
+      {hid: "og:description", name: "og:description", content: 'aymaneMx -- django developer'},
+      {hid: "og:image", name: "og:image", content: '/favicon.png'},
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.png'}
