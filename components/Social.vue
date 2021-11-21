@@ -12,12 +12,14 @@
       <IconTwitter class="h-6 w-6"/>
     </a>
 
-    <a aria-label="Medium"
+    <a
+aria-label="Medium"
        class="social-link hover:text-primary mx-3" href="https://aymanemx.medium.com/">
       <IconMedium class="h-6 w-6"/>
     </a>
 
-    <a aria-label="LinkedIn"
+    <a
+aria-label="LinkedIn"
        class="social-link hover:text-primary mx-3" href="https://www.linkedin.com/in/aymane-mimouni/">
       <IconLinkedin class="h-6 w-6"/>
     </a>

@@ -12,13 +12,11 @@
 <script>
 import Blogs from "@/components/Blogs";
 import Hero from "@/components/Hero";
-import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
 
 export default {
   components: {
     Projects,
-    TechStack,
     Hero,
     Blogs,
   },
@@ -73,9 +71,9 @@ export default {
         'https://api.github.com/search/repositories?q=user:aymanemx&sort=stars&per_page=3'
       )
       .catch((errors) => {
-        console.log(errors)
+        // console.log(errors)
       })
-    return {posts: posts, projects: projects.data.items};
+    return {posts, projects: projects.data.items};
   },
 }
 </script>

@@ -10,9 +10,22 @@ import 'prismjs/components/prism-graphql'
 import 'prismjs/components/prism-javascript'
 
 export default {
+  async asyncData({ $notion, params, error }) {
+    const pageTable = await $notion.getPageTable(
+      "ceef6f1a895a46b2a0e4a87b41405547"
+    )
+    const page = pageTable.find(
+      (item) => item.public && item.slug === params.slug
+    )
+    const blockMap = await $notion.getPageBlocks(page ? page.id : params.slug)
+    if (!blockMap || blockMap.error) {
+      return error({ statusCode: 404, message: "Post not found" })
+    }
+    return { blockMap, page}
+  },
   data() {
     return {
-      pageLinkOptions: {component: "NuxtLink", href: "to"},
+      pageLinkOptions: { component: "NuxtLink", href: "to" },
     }
   },
   head() {
@@ -29,42 +42,24 @@ export default {
     return {
       title,
       link: [{rel: "canonical", href}],
-      meta: meta,
+      meta,
     }
-  },
-  async asyncData({$notion, params, error}) {
-    const pageTable = await $notion.getPageTable(
-      "ceef6f1a895a46b2a0e4a87b41405547"
-    )
-    const page = pageTable.find(
-      (item) => item.public && item.slug === params.slug
-    )
-    const blockMap = await $notion.getPageBlocks(page ? page.id : params.slug)
-    if (!blockMap || blockMap.error) {
-      return error({statusCode: 404, message: "Post not found"})
-    }
-    return {blockMap, page}
   }
 }
 </script>
 
 
 <template>
-  <NotionRenderer
-    :blockMap="blockMap"
-    :pageLinkOptions="pageLinkOptions"
-    fullPage prism/>
+  <NotionRenderer :block-map="blockMap" :page-link-options="pageLinkOptions" full-page prism/>
 </template>
 
 
 <style>
 @import "vue-notion/src/styles.css";
-
-.notion-title, .notion-text, .notion-list, .notion-callout-text, p, h1, h2, h3, h4, span {
-  @apply dark: text-white;
+.notion-title, .notion-text, .notion-list, .notion-callout-text, p , h1, h2, h3, h4, span {
+  @apply dark:text-white;
 }
-
-.notion-link {
-  @apply dark: hover: bg-red-500;
+.notion-link{
+  @apply dark:hover:bg-red-500;
 }
 </style>

@@ -2,7 +2,7 @@
 import prepareMeta from "./utils/prepareMeta"
 
 /* Export and inject plugin */
-const Util = ({}, inject) => {
+const Util = (_, inject) => {
   inject("prepareMeta", prepareMeta)
 }
 

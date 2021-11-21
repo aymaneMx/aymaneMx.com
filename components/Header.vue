@@ -48,13 +48,13 @@
 import ColorSwitcher from "~/components/ColorSwitcher";
 
 export default {
+  components: {
+    ColorSwitcher,
+  },
   data() {
     return {
       isOpen: false
     }
-  },
-  components: {
-    ColorSwitcher,
   },
   methods: {
     toggle() {
@@ -70,6 +70,6 @@ export default {
 }
 
 .nav-link {
-  @apply ml-5 font-medium text-center text-lg text-gray-700 dark: text-gray-200 dark: hover: text-primary hover: text-primary m-auto;
+  @apply ml-5 font-medium text-center text-lg text-gray-700 dark:text-gray-200 dark:hover:text-primary hover:text-primary m-auto;
 }
 </style>
