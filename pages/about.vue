@@ -4,7 +4,6 @@ export default {
     const blockMap = await $notion.getPageBlocks("ad2346af0894443d8906cf78de4f310f")
     return {blockMap}
   },
-  data: () => ({blockMap: null}),
   head: {
     title: "About"
   },
