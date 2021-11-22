@@ -10,6 +10,7 @@
 </template>
 
 <script>
+// you don't need to import components (directly in component folder)
 import Blogs from "@/components/Blogs";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
@@ -23,6 +24,7 @@ export default {
   async asyncData({$axios}) {
 
     // FIXME: is there a nice way to store static data?
+    // https://www.freecodecamp.org/news/how-to-use-flat-file-data-in-a-static-nuxt-app/
     const posts = [
       {
         "created_at": "2020-04-08",
