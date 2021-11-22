@@ -1,4 +1,5 @@
 # aymaneMx.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e7480484-a8b5-4e42-ac14-2a6d8b41b0df/deploy-status)](https://app.netlify.com/sites/unruffled-tesla-0cb748/deploys)
 
 ## Features 
 
@@ -22,9 +23,9 @@ $ npm run dev
 
 ## Credits 
 
-- :moon: The dark mode : https://github.com/eggsy/website
-- :art: the minimal design : https://github.com/dev-ggaurav/Monotone
-- :star: The open source section : https://github.com/MouadZIANI/mouadziani.com and https://github.com/smakosh/smakosh.com
+- :moon: The dark mode : [eggsy](https://github.com/eggsy/website)
+- :art: the minimal design : [Monotone](https://github.com/dev-ggaurav/Monotone)
+- :star: The open source section : [mouadziani](https://github.com/MouadZIANI/mouadziani.com) and [smakosh](https://github.com/smakosh/smakosh.com)
 
 
 ## TODO 
