@@ -52,6 +52,7 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
+    'nuxt-speedkit'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -73,5 +74,31 @@ export default {
   // Google Analytics Configuration: https://google-analytics.nuxtjs.org
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID,
+  },
+
+  // speedkit: a tool to score 100% in lighthouse
+  // https://nuxt-speedkit.grabarzundpartner.dev/
+  speedkit: {
+    detection: {
+      performance: true,
+      browserSupport: true
+    },
+    performanceMetrics: {
+      device: {
+        hardwareConcurrency: { min: 2, max: 48 },
+        deviceMemory: { min: 2 }
+      },
+      timing: {
+        fcp: 800,
+        dcl: 1200
+      },
+      lighthouseDetectionByUserAgent: false
+    },
+    componentAutoImport: false,
+    componentPrefix: undefined,
+    lazyOffset: {
+      component: '0%',
+      asset: '0%'
+    }
   }
 }
