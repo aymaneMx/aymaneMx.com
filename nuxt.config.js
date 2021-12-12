@@ -52,7 +52,6 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
-    'nuxt-lazy-load'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
