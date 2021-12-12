@@ -7,8 +7,8 @@
     "thumbnail": [
       {
         "name": "vue-django.webp",
-        "url": "https://www.notion.so/image/https:%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8fadee5a-2034-4b8e-96ab-028bffe69771%2Fvue-django.webp?table=block&id=985f575f-ff8e-4026-ac18-1d6765924786&cache=v2",
-        "rawUrl": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8fadee5a-2034-4b8e-96ab-028bffe69771/vue-django.webp"
+        "url": "https://www.notion.so/image/https:%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F360c8017-736f-4057-8a04-d9b5c38a9329%2Fvue-django.webp?table=block&id=985f575f-ff8e-4026-ac18-1d6765924786&cache=v2",
+        "rawUrl": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/360c8017-736f-4057-8a04-d9b5c38a9329/vue-django.webp"
       }
     ],
     "tags": [
@@ -26,9 +26,9 @@
     "slug": "building-a-full-text-search-app-using-django-docker-and-elasticsearch",
     "thumbnail": [
       {
-        "name": "django-docker-elasticsearch (1).webp",
-        "url": "https://www.notion.so/image/https:%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F84f054e4-2150-4cfa-9b18-beb3cecd9282%2Fdjango-docker-elasticsearch_(1).webp?table=block&id=5925638b-504d-40d9-8a18-289f49ce3bdc&cache=v2",
-        "rawUrl": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/84f054e4-2150-4cfa-9b18-beb3cecd9282/django-docker-elasticsearch_(1).webp"
+        "name": "django-docker-elasticsearch.webp",
+        "url": "https://www.notion.so/image/https:%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8462e045-5003-40dc-9e59-24c568acc126%2Fdjango-docker-elasticsearch.webp?table=block&id=5925638b-504d-40d9-8a18-289f49ce3bdc&cache=v2",
+        "rawUrl": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8462e045-5003-40dc-9e59-24c568acc126/django-docker-elasticsearch.webp"
       }
     ],
     "tags": [
@@ -48,8 +48,8 @@
     "thumbnail": [
       {
         "name": "graphql-in-django-overview.webp",
-        "url": "https://www.notion.so/image/https:%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F66fb7612-2a16-4cca-921c-7898a5ac83e9%2Fgraphql-in-django-overview.webp?table=block&id=5869efc1-2402-41e8-b242-c4cb6e711646&cache=v2",
-        "rawUrl": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/66fb7612-2a16-4cca-921c-7898a5ac83e9/graphql-in-django-overview.webp"
+        "url": "https://www.notion.so/image/https:%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffb2fe653-6037-4980-92a3-ecc440178141%2Fgraphql-in-django-overview.webp?table=block&id=5869efc1-2402-41e8-b242-c4cb6e711646&cache=v2",
+        "rawUrl": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb2fe653-6037-4980-92a3-ecc440178141/graphql-in-django-overview.webp"
       }
     ],
     "tags": [
