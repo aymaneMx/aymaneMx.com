@@ -44,7 +44,6 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     'vue-notion/nuxt',
-    '@aceforth/nuxt-optimized-images',
     '@nuxtjs/google-analytics',
     '@nuxtjs/eslint-module'
   ],
@@ -53,7 +52,6 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
-    'nuxt-speedkit',
     'nuxt-lazy-load'
   ],
 
@@ -61,10 +59,6 @@ export default {
   build: {},
   colorMode: {
     classSuffix: ''
-  },
-
-  optimizedImages: {
-    optimizeImages: true
   },
 
   // Sitemap Configuration: https://sitemap.nuxtjs.org/usage/sitemap-options#from-a-function-which-returns-a-promise
@@ -80,32 +74,5 @@ export default {
   // Google Analytics Configuration: https://google-analytics.nuxtjs.org
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID,
-  },
-
-  // https://nuxt-speedkit.grabarzundpartner.dev/setup
-  speedkit: {
-    detection: {
-      performance: true,
-      browserSupport: true
-    },
-    performanceMetrics: {
-      device: {
-        hardwareConcurrency: {min: 2, max: 48},
-        deviceMemory: {min: 2}
-      },
-      timing: {
-        fcp: 800,
-        dcl: 1200
-      },
-      lighthouseDetectionByUserAgent: false
-    },
-
-    componentAutoImport: false,
-    componentPrefix: undefined,
-
-    lazyOffset: {
-      component: '0%',
-      asset: '0%'
-    }
   }
 }
