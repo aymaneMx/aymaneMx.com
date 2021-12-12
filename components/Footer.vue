@@ -18,13 +18,3 @@ aria-label="AymaneMx.com" class="text-sm underline text-gray-700 dark:text-gray-
     </div>
   </div>
 </template>
-
-<script>
-import Social from '../components/Social.vue'
-
-export default {
-  components: {
-    Social
-  }
-}
-</script>

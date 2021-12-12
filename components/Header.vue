@@ -45,12 +45,7 @@
 
 <script>
 
-import ColorSwitcher from "~/components/ColorSwitcher";
-
 export default {
-  components: {
-    ColorSwitcher,
-  },
   data() {
     return {
       isOpen: false
