@@ -45,13 +45,16 @@ export default {
     '@nuxtjs/color-mode',
     'vue-notion/nuxt',
     '@aceforth/nuxt-optimized-images',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/eslint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-speedkit',
+    'nuxt-lazy-load'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -77,5 +80,32 @@ export default {
   // Google Analytics Configuration: https://google-analytics.nuxtjs.org
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID,
+  },
+
+  // https://nuxt-speedkit.grabarzundpartner.dev/setup
+  speedkit: {
+    detection: {
+      performance: true,
+      browserSupport: true
+    },
+    performanceMetrics: {
+      device: {
+        hardwareConcurrency: {min: 2, max: 48},
+        deviceMemory: {min: 2}
+      },
+      timing: {
+        fcp: 800,
+        dcl: 1200
+      },
+      lighthouseDetectionByUserAgent: false
+    },
+
+    componentAutoImport: false,
+    componentPrefix: undefined,
+
+    lazyOffset: {
+      component: '0%',
+      asset: '0%'
+    }
   }
 }

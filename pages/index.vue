@@ -4,7 +4,7 @@
       <Hero/>
     </div>
 
-    <Blogs :posts="posts" title="Featured blogs"/>
+    <Blogs :posts="posts" title="Featured blogs" :critical="true"/>
     <Projects :projects="projects"/>
   </div>
 </template>
