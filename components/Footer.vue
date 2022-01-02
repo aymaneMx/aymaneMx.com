@@ -9,8 +9,6 @@
 aria-label="AymaneMx.com" class="text-sm underline text-gray-700 dark:text-gray-200"
              href="https://github.com/aymaneMx/aymaneMx.com">Open sourced on Github</a>
         </div>
-
-
         <div>
           <Social/>
         </div>
