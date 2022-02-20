@@ -54,7 +54,6 @@
             ></textarea>
           </div>
         </div>
-<!--        <div class="g-recaptcha" data-sitekey="6LfskI0eAAAAACbTYKDghPDkMZDk8hHm9iVOpEYB"></div>-->
         <div class="flex justify-end w-full">
           <button
             type="submit"
@@ -89,7 +88,7 @@ export default {
         .$post('https://formspree.io/f/mgedapdp', data)
         .then((response) => {
           this.message =
-            'Thank you for getting in touch! '
+            'Thank you for getting in touch!'
           event.target.reset()
         })
         .then((response) => {

@@ -25,7 +25,7 @@ $ npm run dev
 
 - :moon: The dark mode : [eggsy](https://github.com/eggsy/website)
 - :art: the minimal design : [Monotone](https://github.com/dev-ggaurav/Monotone)
-- :star: The open source section : [mouadziani](https://github.com/MouadZIANI/mouadziani.com) and [smakosh](https://github.com/smakosh/smakosh.com)
+- :star: The open source section & contact me : [mouadziani](https://github.com/MouadZIANI/mouadziani.com) and [smakosh](https://github.com/smakosh/smakosh.com)
 
 
 ## TODO 
@@ -34,5 +34,5 @@ $ npm run dev
 - [x] integrate google analytics
 - [x] fix metadata (double check: https://nuxtjs.org/docs/features/meta-tags-seo/) 
 - [x] generate sitemap (https://sitemap.nuxtjs.org/fr/)
-- [ ] add contact me 
+- [x] add contact me 
 - [ ] add comments
