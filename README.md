@@ -34,3 +34,5 @@ $ npm run dev
 - [x] integrate google analytics
 - [x] fix metadata (double check: https://nuxtjs.org/docs/features/meta-tags-seo/) 
 - [x] generate sitemap (https://sitemap.nuxtjs.org/fr/)
+- [ ] add contact me 
+- [ ] add comments

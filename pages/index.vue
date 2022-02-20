@@ -4,8 +4,9 @@
       <Hero/>
     </div>
 
-    <Blogs :posts="posts" title="Featured blogs" :critical="true"/>
+    <Blogs :posts="posts" title="Featured Blogs" :critical="true"/>
     <Projects :projects="projects"/>
+    <Contact title="Get In touch"/>
   </div>
 </template>
 
