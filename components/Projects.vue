@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16">
+  <div class="mt-20">
     <div class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300">
       <h2 class="text-center">Open Source Projects</h2>
       <IconDoubleDown class="h-4 w-4"/>
