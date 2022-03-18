@@ -12,16 +12,16 @@ import 'prismjs/components/prism-javascript'
 export default {
   async asyncData({ $notion, params, error }) {
     const pageTable = await $notion.getPageTable(
-      "ceef6f1a895a46b2a0e4a87b41405547"
+      "7da47e094f104ed3ac77ce925bee90f5"
     )
-    const page = pageTable.find(
-      (item) => item.public && item.slug === params.slug
+    const til = pageTable.find(
+      (item) => item.slug && item.slug === params.slug
     )
-    const blockMap = await $notion.getPageBlocks(page ? page.id : params.slug)
+    const blockMap = await $notion.getPageBlocks(til ? til.id : params.slug)
     if (!blockMap || blockMap.error) {
       return error({ statusCode: 404, message: "Post not found" })
     }
-    return { blockMap, page}
+    return { blockMap, til}
   },
   data() {
     return {
@@ -29,15 +29,13 @@ export default {
     }
   },
   head() {
-    const post = this.page
-    const title = post?.title
-    const description = post?.description || "aymaneMx's blog about python, django, vuejs."
-    const image = post?.thumbnail[0].url || null
-    const tags = post.tags || title
-    const href = `https://aymanemx.com/posts/${post.slug}`
+    const til = this.til
+    const title = til?.title
+    const tags = til.tags || title
+    const href = `https://aymanemx.com/til/${til.slug}`
     const meta = this.$prepareMeta(
-      {title, description, image, keywords: `${tags}`, url: href},
-      [{name: "article:published-time", content: post?.created_at || null},]
+      {title, keywords: `${tags}`, url: href},
+      [{name: "article:published-time", content: til?.created_at || null},]
     )
     return {
       title,
