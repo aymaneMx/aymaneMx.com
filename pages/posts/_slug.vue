@@ -34,7 +34,7 @@ export default {
     const description = post?.description || "aymaneMx's blog about python, django, vuejs."
     const image = post?.thumbnail[0].url || null
     const tags = post.tags || title
-    const href = `https://nuxt.aymanemx.com/posts/${post.slug}`
+    const href = `https://aymanemx.com/posts/${post.slug}`
     const meta = this.$prepareMeta(
       {title, description, image, keywords: `${tags}`, url: href},
       [{name: "article:published-time", content: post?.created_at || null},]
