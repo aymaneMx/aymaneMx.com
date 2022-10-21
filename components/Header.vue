@@ -11,7 +11,6 @@
 
         <div class="flex flex-row">
           <nuxt-link class="nav-link" to="/posts">Blog</nuxt-link>
-          <nuxt-link class="nav-link" to="/til/random">Random TIL</nuxt-link>
           <nuxt-link class="nav-link" to="/about">About</nuxt-link>
           <ColorSwitcher/>
         </div>
